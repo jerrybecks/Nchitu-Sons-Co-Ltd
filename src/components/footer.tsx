@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { COMPANY_NAME, WHATSAPP_URL } from "@/lib/data";
 
 export function Footer() {
@@ -7,7 +8,10 @@ export function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
-            <div className="font-bold text-lg mb-3" style={{ color: "var(--color-primary)" }}>{COMPANY_NAME}</div>
+            <div className="flex items-center gap-2 mb-3">
+              <Image src="/logo.png" alt="Nchitu & Sons LLC" width={32} height={32} className="rounded" />
+              <span className="font-bold text-lg" style={{ color: "var(--color-primary)" }}>{COMPANY_NAME}</span>
+            </div>
             <p className="text-sm" style={{ color: "var(--color-text-muted)" }}>
               Your trusted source for quality used Japanese vehicles, machinery, and equipment.
             </p>

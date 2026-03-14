@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 import { useTheme } from "./theme-provider";
 
@@ -13,12 +14,11 @@ export function Navbar() {
       style={{ background: "var(--color-bg)", borderColor: "var(--color-border)", opacity: 0.97 }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <Link href="/" className="flex items-center gap-2 font-bold text-xl" style={{ color: "var(--color-primary)" }}>
-            <span className="w-9 h-9 rounded-lg flex items-center justify-center text-white text-sm font-bold"
-              style={{ background: "var(--color-primary)" }}>
-              N&S
+          <Link href="/" className="flex items-center gap-2.5">
+            <Image src="/logo.png" alt="Nchitu & Sons LLC" width={40} height={40} className="rounded-lg" />
+            <span className="font-bold text-lg hidden sm:inline" style={{ color: "var(--color-primary)" }}>
+              Nchitu & Sons
             </span>
-            <span className="hidden sm:inline">Nchitu & Sons</span>
           </Link>
 
           <div className="hidden md:flex items-center gap-6">

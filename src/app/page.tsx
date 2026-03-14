@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { products, whyChooseUs, WHATSAPP_URL } from "@/lib/data";
 import { ProductCard } from "@/components/product-card";
 
@@ -6,18 +7,22 @@ export default function Home() {
   return (
     <>
       {/* Hero */}
-      <section className="pt-28 pb-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden"
-        style={{ background: "var(--color-primary)" }}>
-        <div className="absolute inset-0 opacity-10">
+      <section className="pt-24 pb-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden"
+        style={{ background: "linear-gradient(135deg, var(--color-hero-from) 0%, var(--color-hero-to) 50%, #0e1a3a 100%)" }}>
+        <div className="absolute inset-0">
           <div className="absolute inset-0" style={{
-            backgroundImage: "radial-gradient(circle at 20% 50%, rgba(255,255,255,0.15) 0%, transparent 50%), radial-gradient(circle at 80% 20%, rgba(255,255,255,0.1) 0%, transparent 40%)"
+            backgroundImage: "radial-gradient(circle at 50% 40%, rgba(217,70,239,0.12) 0%, transparent 50%), radial-gradient(circle at 80% 20%, rgba(34,211,238,0.08) 0%, transparent 40%), radial-gradient(circle at 20% 80%, rgba(217,70,239,0.06) 0%, transparent 40%)"
           }} />
         </div>
         <div className="max-w-7xl mx-auto relative z-10 text-center">
+          <div className="mb-8 flex justify-center">
+            <Image src="/logo.png" alt="Nchitu & Sons LLC" width={140} height={140}
+              className="drop-shadow-2xl" priority />
+          </div>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
             Quality Japanese Vehicles,<br />Machinery & Equipment
           </h1>
-          <p className="text-lg sm:text-xl text-white/80 max-w-2xl mx-auto mb-10">
+          <p className="text-lg sm:text-xl text-white/70 max-w-2xl mx-auto mb-10">
             Your trusted source for quality used Japanese vehicles, machinery, and equipment.
             Global shipping to Africa, Europe, and beyond.
           </p>
@@ -28,7 +33,7 @@ export default function Home() {
               Explore Products
             </Link>
             <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer"
-              className="px-8 py-3.5 rounded-lg font-semibold text-base border-2 border-white/30 text-white hover:bg-white/10 transition">
+              className="px-8 py-3.5 rounded-lg font-semibold text-base border-2 border-white/20 text-white hover:bg-white/10 transition">
               Contact Us
             </a>
           </div>

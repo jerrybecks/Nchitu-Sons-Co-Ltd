@@ -1,30 +1,34 @@
 @import "tailwindcss";
 
 :root {
-  --color-primary: #1e3a5f;
-  --color-primary-dark: #152a45;
-  --color-accent: #e8a020;
-  --color-accent-hover: #d4900a;
+  --color-primary: #0e7490;
+  --color-primary-dark: #0a5a6e;
+  --color-accent: #d946ef;
+  --color-accent-hover: #c026d3;
   --color-bg: #ffffff;
-  --color-bg-alt: #f8fafc;
+  --color-bg-alt: #f0f4f8;
   --color-text: #1a1a2e;
   --color-text-muted: #64748b;
   --color-border: #e2e8f0;
   --color-card-bg: #ffffff;
+  --color-hero-from: #0f0a2a;
+  --color-hero-to: #1a1040;
   --whatsapp: #25d366;
 }
 
 [data-theme="dark"] {
-  --color-primary: #3b82f6;
-  --color-primary-dark: #2563eb;
-  --color-accent: #f59e0b;
-  --color-accent-hover: #d97706;
-  --color-bg: #0f172a;
-  --color-bg-alt: #1e293b;
+  --color-primary: #22d3ee;
+  --color-primary-dark: #06b6d4;
+  --color-accent: #e879f9;
+  --color-accent-hover: #d946ef;
+  --color-bg: #0f0a1e;
+  --color-bg-alt: #1a1232;
   --color-text: #e2e8f0;
   --color-text-muted: #94a3b8;
-  --color-border: #334155;
-  --color-card-bg: #1e293b;
+  --color-border: #2d2252;
+  --color-card-bg: #1a1232;
+  --color-hero-from: #0a0618;
+  --color-hero-to: #120d28;
 }
 
 * {
